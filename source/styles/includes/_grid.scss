@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.container-fluid {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0 3rem;
+    grid-template-areas: ". .";
+    //display: block;
+}
+
+.column {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    > .grid-row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+article {
+    background: yellow;
+}
+.nested {
+    article {
+        background: greenyellow;
+    }
+}

@@ -1,0 +1,57 @@
+{% extends "layouts/basic.html" %}
+
+    {% block meta %}
+        <meta name="description" content="This is home.">
+    {% endblock %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="styles/style.css">
+    {% endblock %}
+
+    {% block body %}
+        <main>
+            <h1>
+                Welcome to Drljaca
+            </h1>
+            <p>CSS grid layouta</p>
+            <div class="container">
+                <div class="grid-row">
+                    <div class="column">
+                        <article>
+                            1 column
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article>
+                            2 column
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article>
+                            3 column
+                        </article>
+                    </div>
+                    <div class="column nested">
+                        <article>
+                            4 column have a nested columns
+                            <div class="grid-row">
+                                <div class="column">
+                                    <article>
+                                        child 1 column
+                                    </article>
+                                </div>
+                                <div class="column">
+                                    <article>
+                                        child 2 column
+                                    </article>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </main>
+    {% endblock %}
+
+{% block scripts %}
+{% endblock %}
